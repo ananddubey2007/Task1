@@ -14,7 +14,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'http://localhost:5173', // Replace with the frontend's URL (React app)
+    origin: 'https://task1-omega-two.vercel.app', // Replace with the frontend's URL (React app)
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // Allowed methods
     credentials: true
   })

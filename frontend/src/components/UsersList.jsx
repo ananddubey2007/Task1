@@ -29,7 +29,7 @@ const UserList = () => {
     // Fetch user points history
     const fetchUserHistory = async (username) => {
         try {
-            const response = await axios.post('${import.meta.env.VITE_REACT_APP_API_URI}/api/user/v1/your-history', { username });
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_API_URI}/api/user/v1/your-history`, { username });
             setPointsHistory(response.data.data);
         } catch (err) {
             setError('Error fetching user history');
